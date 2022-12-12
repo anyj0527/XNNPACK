@@ -12,8 +12,7 @@ PROJECT(clog-download NONE)
 
 INCLUDE(ExternalProject)
 ExternalProject_Add(clog
-  URL https://github.com/pytorch/cpuinfo/archive/4b5a76c4de21265ddba98fc8f259e136ad11411b.zip
-  URL_HASH SHA256=6000cf2a0befe428d97ea921372397d049889cbd8a4cd5b93390c71415dd3b68
+  URL "${CMAKE_SOURCE_DIR}/externals/clog.tar.gz"
   SOURCE_DIR "${CMAKE_BINARY_DIR}/clog-source"
   BINARY_DIR "${CMAKE_BINARY_DIR}/clog"
   CONFIGURE_COMMAND ""
